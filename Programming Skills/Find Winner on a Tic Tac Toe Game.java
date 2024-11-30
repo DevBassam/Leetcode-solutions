@@ -7,7 +7,7 @@ class Solution {
             if(i % 2 == 0) slots[index] = 'x';
             else slots[index] = 'o';
         }
-        System.out.println(Arrays.toString(slots));
+        // System.out.println(Arrays.toString(slots));
         if(checkRow('x',slots)||checkCol('x',slots)||checkDiagonal('x',slots)) return "A";
         if(checkRow('o',slots)||checkCol('o',slots)||checkDiagonal('o',slots)) return "B";
         return (moves.length < 9) ? "Pending" : "Draw";        
